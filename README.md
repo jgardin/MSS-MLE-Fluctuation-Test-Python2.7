@@ -27,7 +27,8 @@ Outputs:
         
         
 Example Usage:
-  Input Command$ python2.7 mss-mle_calc.py -f test_data.txt -n 100000 -p 0.15
+
+    python2.7 mss-mle_calc.py -f test_data.txt -n 100000 -p 0.15
     Optimization terminated successfully.
          Current function value: -0.000000
          Iterations: 12
