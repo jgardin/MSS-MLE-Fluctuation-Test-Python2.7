@@ -48,7 +48,6 @@ def mssCalc(estM,max=mVal,count=ctArray_):
 	return -1*prod
 
 finalM=minimize	(mssCalc,leeCoulson(data),method='nelder-mead',options={'xtol':1e-3,'disp':True})
-print finalM.message,"\n"
 adjM=np.true_divide(float(*finalM.x),float(*args.p))
 mutR=np.true_divide(float(np.log(2)*adjM),float(*args.n))
 stdDev=(1.225*(np.power(adjM,-0.315)))/np.sqrt(len(data))
